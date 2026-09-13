@@ -46,10 +46,3 @@ npm run dev
 
 The site will be available at `http://localhost:5173`.
 
-## Preview
-
-![Portfolio Preview](public/images/preview.png)
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
