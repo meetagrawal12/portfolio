@@ -1,13 +1,11 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// @ts-ignore
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
-// @ts-ignore
-import { SplitText } from "gsap-trial/SplitText";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { SplitText } from "gsap/SplitText";
 
 interface ParaElement extends HTMLElement {
   anim?: gsap.core.Animation;
-  split?: any; // Changed to 'any' because SplitText types are missing
+  split?: SplitText;
 }
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);

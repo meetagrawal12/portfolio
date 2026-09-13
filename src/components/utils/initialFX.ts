@@ -1,7 +1,8 @@
-// @ts-ignore
-import { SplitText } from 'gsap-trial/SplitText';
+import { SplitText } from "gsap/SplitText";
 import gsap from "gsap";
 import { smoother } from "../Navbar";
+
+gsap.registerPlugin(SplitText);
 
 export function initialFX() {
   document.body.style.overflowY = "auto";
@@ -34,7 +35,7 @@ export function initialFX() {
     }
   );
 
-  let TextProps = { type: "chars,lines", linesClass: "split-h2" };
+  let TextProps = { type: "chars,lines", linesClass: "split-h2" } as const;
 
   var landingText2 = new SplitText(".landing-h2-info", TextProps);
   gsap.fromTo(
